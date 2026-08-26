@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+/build/
+/dist/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Experiment outputs — root-scoped so the vendored makani/ tree stays intact
+/data/
+/runs/
+/logs/
+/results/
+/checkpoints/
+wandb/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

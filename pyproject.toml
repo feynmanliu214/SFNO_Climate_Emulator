@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfno-emulator"
+version = "0.1.0"
+description = "Training and inference for SFNO climate emulators, built on NVIDIA Makani"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Zhixing Liu" }]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+# Runtime dependencies are listed in requirements.txt. Makani itself is
+# vendored under makani/ and installed separately:  pip install -e ./makani
+dependencies = []
+
+[project.scripts]
+sfno-emulator = "sfno_emulator.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/feynmanliu214/SFNO_Climate_Emulator"
+Upstream = "https://github.com/NVIDIA/makani"
+
+[tool.setuptools.packages.find]
+where = ["src"]

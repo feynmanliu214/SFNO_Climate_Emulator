@@ -1,0 +1,37 @@
+SFNO_Climate_Emulator
+Copyright (c) 2026 Zhixing Liu
+
+This product includes software developed by NVIDIA CORPORATION & AFFILIATES.
+
+--------------------------------------------------------------------------------
+Vendored third-party software: makani
+--------------------------------------------------------------------------------
+
+The `makani/` directory is an unmodified copy of NVIDIA's Makani:
+
+    Upstream:  https://github.com/NVIDIA/makani
+    Commit:    c970430
+    License:   Apache License 2.0
+    Copyright: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES.
+               All rights reserved.
+
+Makani is redistributed here under the terms of the Apache License 2.0. The
+original license text is retained at `makani/LICENSE`, and per-file SPDX
+headers are preserved as published upstream. Makani's own authorship and
+maintainer list is recorded in `makani/pyproject.toml`.
+
+The only deviation from the upstream tree at that commit is the removal of
+`images/` (two large animated GIFs), which are not required to build, install
+or run the package. Makani's README references them by absolute URL from the
+upstream repository, so documentation renders unaffected.
+
+No source file under `makani/` has been altered. This repository claims no
+authorship over any part of Makani.
+
+--------------------------------------------------------------------------------
+First-party software
+--------------------------------------------------------------------------------
+
+Everything outside `makani/` (README.md, NOTICE, requirements.txt, configs/,
+src/sfno_emulator/) is first-party code, also released under the
+Apache License 2.0. See LICENSE.

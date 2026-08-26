@@ -1,0 +1,17 @@
+# Runtime dependencies for the Makani training framework and the launcher.
+# Mirrors the dependency set declared in makani/pyproject.toml.
+#
+# Install a CUDA-matched PyTorch build FIRST, following the instructions at
+# https://pytorch.org/get-started/locally/ — the pin below is a floor, not a
+# recommendation for any particular CUDA version.
+
+torch>=2.4.0
+numpy>=1.22.4
+h5py>=3.11.0
+nvidia-physicsnemo>=1.1.1
+torch-harmonics>=0.9.0
+wandb>=0.13.7
+tqdm>=4.60.0
+more-itertools
+Pillow
+ruamel.yaml
